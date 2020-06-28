@@ -17,3 +17,11 @@ struct SectionHeaderView: View {
         }.padding()
     }
 }
+
+struct SectionHeaderView_Previews: PreviewProvider {
+    static var previews: some View {
+        SectionHeaderView(name: "Favorites")
+            .padding()
+            .previewLayout(.sizeThatFits)
+    }
+}

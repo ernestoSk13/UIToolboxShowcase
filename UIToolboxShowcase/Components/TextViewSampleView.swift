@@ -26,9 +26,8 @@ struct TextViewSampleView: View {
     }
 }
 
-//struct TextViewSampleView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TextViewSampleView()
-//
-//    }
-//}
+struct TextViewSampleView_Previews: PreviewProvider {
+    static var previews: some View {
+        TextViewSampleView()
+    }
+}

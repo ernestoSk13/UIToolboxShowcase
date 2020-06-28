@@ -92,8 +92,8 @@ struct SparkSampleView: View {
     }
 }
 
-//struct SparkSampleView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SparkSampleView()
-//    }
-//}
+struct SparkSampleView_Previews: PreviewProvider {
+    static var previews: some View {
+        SparkSampleView()
+    }
+}

@@ -12,7 +12,7 @@ import UIToolbox
 struct SearchBarSampleView: View {
     @State private var text: String = ""
     @State private var isOnFocus: Bool = false
-    var items: [String] = ["Red", "Yellow", "Green", "Black", "White", "Orange", "Blue", "Grey"]
+    var items: [String] = ["Red", "Yellow", "Green", "Black", "White", "Orange", "Blue", "Gray"]
     
     var body: some View {
         VStack {
@@ -45,8 +45,8 @@ struct SearchBarSampleView: View {
     }
 }
 
-//struct SearchBarSampleView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SearchBarSampleView()
-//    }
-//}
+struct SearchBarSampleView_Previews: PreviewProvider {
+    static var previews: some View {
+        SearchBarSampleView()
+    }
+}

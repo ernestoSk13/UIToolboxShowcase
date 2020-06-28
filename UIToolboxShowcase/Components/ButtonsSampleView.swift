@@ -42,11 +42,12 @@ struct LargeButtonSection: View {
         ScrollView(.horizontal, showsIndicators: true) {
             HStack {
                 HStack {
-                    LargeButton(title: "Simple Button") {
+                    LargeButton(title: "Default") {
                         
                     }
                     Spacer()
                 }.padding()
+                
                 HStack {
                     LargeButton(title: "Red Button", color: .red) {
                         
@@ -177,26 +178,27 @@ struct CircledButtonSection: View {
     }
 }
 
-//struct ButtonsSampleView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        Group {
-//            ButtonsSampleView()
-//                       .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro"))
-//                       .previewDisplayName("iPhone 11 Pro")
-//            
-//            
-//            ButtonsSampleView()
-//                .previewDevice(PreviewDevice(rawValue: "iPad Pro (11-inch) (2nd generation)"))
-//                .previewDisplayName("iPhone SE (2nd generation)")
-//            ButtonsSampleView()
-//            .previewLayout(PreviewLayout.fixed(width: 1000, height: 500))
-//            .previewDisplayName("iPhone SE (2nd generation)")
-//                .background(Color.black)
-//            .environment(\.colorScheme, .dark)
-//            
-//            ButtonsSampleView()
-//            .previewDevice(PreviewDevice(rawValue: "iPhone SE (2nd generation)"))
-//            .previewDisplayName("iPhone SE (2nd generation)")
-//        }
-//    }
-//}
+struct ButtonsSampleView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            ButtonsSampleView()
+                .padding()
+                       .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro"))
+                       .previewDisplayName("iPhone 11 Pro")
+            
+            
+            ButtonsSampleView()
+                .previewDevice(PreviewDevice(rawValue: "iPad Pro (11-inch) (2nd generation)"))
+                .previewDisplayName("iPhone SE (2nd generation)")
+            ButtonsSampleView()
+            .previewLayout(PreviewLayout.fixed(width: 1000, height: 500))
+            .previewDisplayName("iPhone SE (2nd generation)")
+                .background(Color.black)
+            .environment(\.colorScheme, .dark)
+            
+            ButtonsSampleView()
+            .previewDevice(PreviewDevice(rawValue: "iPhone SE (2nd generation)"))
+            .previewDisplayName("iPhone SE (2nd generation)")
+        }
+    }
+}
